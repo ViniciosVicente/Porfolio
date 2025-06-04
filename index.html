@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinicios Vicente | Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-color: #161b22;
+      --primary: #58a6ff;
+      --text: #c9d1d9;
+      --subtle: #8b949e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 10px auto 0;
+      color: var(--subtle);
+    }
+
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--card-color);
+      color: var(--primary);
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid var(--primary);
+      transition: 0.3s ease;
+    }
+
+    .social-button:hover {
+      background-color: var(--primary);
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+
+    .projects, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: var(--card-color);
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px;
+      flex: 1 1 280px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: var(--primary);
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: var(--subtle);
+      border-top: 1px solid #21262d;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .social-button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vinicios Vicente</h1>
+    <p>Analista de Dados | Desenvolvedor | Apaixonado por tecnologia e soluções inteligentes</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/viniciosvicente-analyst9" class="social-button" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/ViniciosVicente" class="social-button" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Projetos:</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Análise de Vendas com Python</h3>
+        <p>Processamento e visualização de dados de vendas com bibliotecas como Pandas, Matplotlib e Seaborn. Projeto focado na criação de gráficos e insights estratégicos para tomada de decisão.</p>
+      </div>
+      <div class="card">
+        <h3>Automação em Python</h3>
+        <p>Automação para registro de produtos em sistemas internos ou plataformas online. Foco em aumentar a produtividade e reduzir erros no cadastro, com interface simples e robusta.</p>
+      </div>
+      <div class="card">
+        <h3>Análise de Cancelamento</h3>
+        <p>Análise dos fatores que influenciam o cancelamento de clientes em planos de assinatura. Utiliza variáveis como duração, atrasos e interações para identificar padrões e reduzir churn.</p>
+      </div>
+      <div class="card">
+        <h3>Dashboard de Vendas (Power BI)</h3>
+        <p>Modelo de dashboard com gráficos interativos, KPIs e segmentações. Ideal para acompanhar vendas, metas, desempenho por região e produto. Distribuído como template (.pbit) reutilizável.</p>
+      </div>
+      <div class="card">
+        <h3>Calculadora Python</h3>
+        <p>Calculadora simples com operações básicas. Trata erros como divisão por zero e entradas inválidas. Ideal para iniciantes em programação e demonstração de boas práticas em Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Habilidades:</h2>
+    <div class="skills">
+      <div class="card">Python</div>
+      <div class="card">Java</div>
+      <div class="card">Node.js</div>
+      <div class="card">Django</div>
+      <div class="card">PHP</div>
+      <div class="card">SQL</div>
+      <div class="card">Power BI</div>
+      <div class="card">Excel Avançado</div>
+      <div class="card">Análise de Dados</div>
+      <div class="card">Machine Learning</div>
+      <div class="card">Jupyter Notebook</div>
+      <div class="card">PostgreSQL</div>
+      <div class="card">MySQL</div>
+      
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Vinicios Vicente. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
